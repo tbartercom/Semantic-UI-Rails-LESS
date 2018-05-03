@@ -32,19 +32,19 @@
 *******************************/
 
 /* Border-Box */
-*,
-*:before,
-*:after {
+@{scope} *,
+@{scope} *:before,
+@{scope} *:after {
   box-sizing: inherit;
 }
-html {
+@{scope} {
   box-sizing: border-box;
 }
 
 /* iPad Input Shadows */
-input[type="text"], input[type="email"], input[type="search"], input[type="password"] {
+@{scope} input[type="text"], @{scope} input[type="email"], @{scope} input[type="search"], @{scope} input[type="password"] {
   -webkit-appearance: none;
   -moz-appearance: none; /* mobile firefox too! */
 }
 
-.loadUIOverrides();
+/* .loadUIOverrides(); Removed because changes were being ignored */
